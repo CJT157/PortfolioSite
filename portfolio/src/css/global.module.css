@@ -1,0 +1,40 @@
+.page_container {
+
+}
+
+.title_header {
+  font-size: 30px;
+}
+
+.navbar_container {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar_container > ul{
+  font-size: 24px;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navbar_container > ul > li {
+  text-decoration: none;
+  display: inline;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.navbar_container > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.page_message {
+  font-size: 24px;
+  margin: auto;
+  width: fit-content;
+  text-align: center;
+}
