@@ -7,9 +7,7 @@ export default function Home() {
     <div className={styles.page_container}>
       <Navbar/>
       <div className={styles.page_message}>
-        <p>Hi</p>
-        <p>Hello</p>
-        <p>& Welcome</p>
+        
       </div>
     </div>
   )
