@@ -1,7 +1,8 @@
 import './App.css';
 import Home from './pages/Home';
-import About from './pages/About';
+import Portfolio from './pages/Portfolio';
 import Projects from './pages/Projects';
+import Navbar from './components/Navbar';
 
 import {
     BrowserRouter as Router,
@@ -12,16 +13,17 @@ import {
 function App() {
   return (
     <div className="App">
+      <Navbar/>
       <Router>
         <Switch>
-          <Route path="/home">
-            <Home/>
-          </Route>
-          <Route path="/about">
-            <About/>
+          <Route path="/portfolio">
+            <Portfolio/>
           </Route>
           <Route path="/projects">
             <Projects/>
+          </Route>
+          <Route path="/">
+            <Home/>
           </Route>
         </Switch>
       </Router>

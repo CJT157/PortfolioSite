@@ -1,11 +1,9 @@
 import styles from '../css/global.module.css';
-import Navbar from '../components/Navbar';
 
 export default function Projects() {
 
   return (
     <div className={styles.page_container}>
-      <Navbar/>
       <div className={styles.project_container}>
         <ProjectDisplay
           name={"Checkers"}
@@ -33,9 +31,8 @@ function ProjectDisplay(props) {
     <div className={styles.project_display_container}>
       <h3>{props.name}</h3>
       {props.desc}
-      <div>
-        <a href={props.link}>Go To</a>
-      </div>
+      <br></br>
+      <a className={styles.project_link} href={props.link}>Go To</a>
     </div>
   )
 }

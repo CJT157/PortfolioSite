@@ -1,5 +1,10 @@
+:root {
+  --bg-white: #EFF7F6;
+
+  background-color: #EFF7F6;
+}
+
 .page_container {
-  min-height: 100vh;
   min-width: 100vw;
 }
 
@@ -18,6 +23,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  background-color: white;
 }
 
 .navbar_container > ul{
@@ -37,6 +43,17 @@
 .navbar_container > ul > li > a {
   text-decoration: none;
   color: black;
+  border-bottom: none;
+}
+
+.navbar_container > ul > li > a:hover {
+  animation-name: underline;
+  animation-duration: 1s;
+}
+
+@keyframes underline {
+  0% {border-bottom: transparent 2px solid;}
+  100% {border-bottom: black 2px solid;}
 }
 
 .page_message {
@@ -58,6 +75,7 @@
   margin: 1%;
   padding: 1.5%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, .4);
+  background-color: white;
 }
 
 .project_display_container a {
